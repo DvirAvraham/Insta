@@ -1,0 +1,17 @@
+.user-info {
+    margin-top: calc($headerHeight + 1rem);
+    width: 100%;
+    gap: 3rem;
+    .user-img {
+        max-width: 150px;
+        max-height: 150px;
+        min-width: 100px;
+        img {
+            border-radius: 50%;
+            width: 100%;
+        }
+    }
+    .user-details {
+        flex-grow: 1;
+    }
+}

@@ -1,0 +1,8 @@
+@mixin main-layout {
+    max-width: 935px;
+    margin: auto;
+
+    @media (max-width: 935px) {
+        padding: 0 2rem;
+    }
+}

@@ -1,7 +1,7 @@
 import UserInfo from '../cmps/UserInfo.jsx';
 const ProfilePage = () => {
   const user = {
-    img: 'https://p16-sign-sg.tiktokcdn.com/aweme/720x720/tos-alisg-avt-0068/5ba51753c318c4573c8389783ba5c4c5.jpeg?x-expires=1655787600&x-signature=DhsnUzEOyFyrGCq7BYGL%2FJ0%2FGS0%3D',
+    img: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&w=1000&q=80',
     fullName: 'Benny',
     username: 'BenBen',
     following: [1, 2, 3, 4],
@@ -9,7 +9,7 @@ const ProfilePage = () => {
     posts: [1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 5],
   };
   return (
-    <div className="flex">
+    <div className='profile-page flex'>
       <UserInfo user={user} />
     </div>
   );

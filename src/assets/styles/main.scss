@@ -1,1 +1,12 @@
-@import './basic/helpers';
+// BASE
+
+@import "./basic/mixins";
+@import "./basic/base";
+@import "./basic/variables";
+@import "./basic/helpers";
+
+// CMPS
+@import "./cmps/UserInfo";
+
+// PAGES
+@import "./pages/ProfilePage";
