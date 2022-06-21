@@ -6,3 +6,13 @@
         padding: 0 2rem;
     }
 }
+
+@mixin button {
+    cursor: pointer;
+    background: none;
+    border: 1px solid rgba(219, 219, 219);
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-weight: 600;
+    font-size: 14px;
+}

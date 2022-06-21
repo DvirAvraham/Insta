@@ -1,11 +1,11 @@
 .user-info {
-    margin-top: calc($headerHeight + 1rem);
+    margin-top: calc($headerHeight + 2rem);
     width: 100%;
     gap: 3rem;
     .user-img {
         max-width: 150px;
         max-height: 150px;
-        min-width: 100px;
+        min-width: 150px;
         img {
             border-radius: 50%;
             width: 100%;
@@ -13,5 +13,30 @@
     }
     .user-details {
         flex-grow: 1;
+        gap: 1.5rem;
+        .user-actions {
+            .actions {
+                flex-basis: 50%;
+                button {
+                    @include button;
+                }
+                .options {
+                    font-weight: 800;
+                }
+            }
+        }
+        .user-stats {
+            .amount {
+                font-weight: bold;
+            }
+        }
+        .user-about {
+            .about {
+                margin-top: 1rem;
+                text-overflow: ellipsis;
+                word-break: break-word;
+                white-space: nowrap;
+            }
+        }
     }
 }

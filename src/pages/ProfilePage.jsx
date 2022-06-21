@@ -7,6 +7,7 @@ const ProfilePage = () => {
     following: [1, 2, 3, 4],
     followers: [1, 2, 3],
     posts: [1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 5],
+    about: 'About me is about',
   };
   return (
     <div className='profile-page flex'>
