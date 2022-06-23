@@ -1,0 +1,33 @@
+.login-page {
+    @include main-layout;
+    .content-container {
+        margin-top: 100px;
+        gap: 2rem;
+        .img-container {
+            height: fit-content;
+        }
+        .form-container {
+            padding: 4rem 2rem;
+            width: 350px;
+            max-width: 350px;
+            border: 1px solid $clr1;
+            height: auto;
+            background-color: #fff;
+            gap: 3rem;
+            .logo {
+                font-size: 3rem;
+                font-family: instalogo;
+                text-align: center;
+            }
+            form {
+                & > div {
+                    margin-top: 0.5rem;
+                }
+                button {
+                    margin-top: 1rem;
+                    @include form-btn;
+                }
+            }
+        }
+    }
+}

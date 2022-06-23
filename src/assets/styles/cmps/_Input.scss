@@ -1,0 +1,29 @@
+.input-container {
+    border: 1px solid $clr1;
+    height: 36px;
+    position: relative;
+    padding: 0 8px;
+    background-color: rgba(250, 250, 250);
+    border-radius: 0.2rem;
+    label {
+        font-size: 0.7rem;
+        position: absolute;
+        top: 0;
+        left: 8px;
+        color: #8f8f8f;
+    }
+    input {
+        background: none;
+        border: none;
+        position: absolute;
+        bottom: 2px;
+        left: 8px;
+        font-weight: 200;
+        font-size: 12px;
+        width: 90%;
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+}

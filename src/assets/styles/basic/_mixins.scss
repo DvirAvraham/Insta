@@ -1,5 +1,6 @@
 @mixin main-layout {
     max-width: 935px;
+    min-height: 100vh;
     margin: auto;
 
     @media (max-width: 935px) {
@@ -15,4 +16,17 @@
     padding: 6px 10px;
     font-weight: 600;
     font-size: 14px;
+}
+
+@mixin form-btn {
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+    background: #0195f6;
+    border: none;
+    width: auto;
+    padding: 7px 9px;
+    border-radius: 0.3rem;
+    text-overflow: ellipsis;
 }
