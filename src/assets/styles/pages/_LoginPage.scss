@@ -6,27 +6,55 @@
         .img-container {
             height: fit-content;
         }
-        .form-container {
-            padding: 4rem 2rem;
-            width: 350px;
-            max-width: 350px;
-            border: 1px solid $clr1;
-            height: auto;
-            background-color: #fff;
-            gap: 3rem;
-            .logo {
-                font-size: 3rem;
-                font-family: instalogo;
-                text-align: center;
+        .right-side {
+            .form-container,
+            .switch-mode-container {
+                padding: 4rem 2rem;
+                width: 350px;
+                max-width: 350px;
+                border: 1px solid $clr1;
+                height: fit-content;
+                background-color: #fff;
+                gap: 3rem;
+                .logo {
+                    font-size: 3rem;
+                    font-family: instalogo;
+                    text-align: center;
+                }
+                form {
+                    & > div {
+                        margin-top: 0.5rem;
+                    }
+                    button {
+                        margin-top: 1rem;
+                        @include form-btn;
+                    }
+                }
             }
-            form {
-                & > div {
-                    margin-top: 0.5rem;
+            .switch-mode-container {
+                margin-top: 1rem;
+                padding: 2rem;
+                text-align: center;
+                span {
+                    span {
+                        cursor: pointer;
+                        font-weight: bold;
+                        color: #0095f6;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
                 }
-                button {
-                    margin-top: 1rem;
-                    @include form-btn;
-                }
+            }
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .login-page {
+        .content-container {
+            .img-container {
+                display: none;
             }
         }
     }

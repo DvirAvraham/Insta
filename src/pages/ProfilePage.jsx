@@ -1,7 +1,7 @@
-import {useEffect} from 'react';
+import { useEffect } from 'react';
 import UserInfo from '../cmps/UserInfo.jsx';
-import {useDispatch} from 'react-redux';
-import {setUsers} from '../store/actions/userActions';
+import { useDispatch } from 'react-redux';
+import { setUsers } from '../store/actions/userActions';
 
 const ProfilePage = () => {
   const dispatch = useDispatch();
@@ -20,7 +20,7 @@ const ProfilePage = () => {
     about: 'About me is about',
   };
   return (
-    <div className="profile-page flex">
+    <div className='profile-page flex'>
       <UserInfo user={user} />
     </div>
   );
