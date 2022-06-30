@@ -1,8 +1,7 @@
 import {useState} from 'react';
 import {useDispatch} from 'react-redux';
 import loginImg from '../assets/img/login-page-photo.png';
-import Input from '../cmps/Input';
-import authService from '../services/auth.service.js';
+// import Input from '../cmps/Input';
 import {login} from '../store/actions/authActions';
 
 const LoginPage = () => {
@@ -22,7 +21,6 @@ const LoginPage = () => {
   };
 
   const updateCredentials = (ev) => {
-    console.log(ev.target.value);
     setCredentials((prev) => ({...prev, [ev.target.name]: ev.target.value}));
   };
 

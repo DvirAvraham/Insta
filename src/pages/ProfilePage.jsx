@@ -1,12 +1,10 @@
 import {useEffect} from 'react';
 import UserInfo from '../cmps/UserInfo.jsx';
-import {useDispatch, useSelector} from 'react-redux';
+import {useDispatch} from 'react-redux';
 import {setUsers} from '../store/actions/userActions';
 
 const ProfilePage = () => {
   const dispatch = useDispatch();
-
-  const {users} = useSelector((state) => state.userModule);
 
   useEffect(() => {
     dispatch(setUsers());
@@ -24,7 +22,6 @@ const ProfilePage = () => {
   return (
     <div className="profile-page flex">
       <UserInfo user={user} />
-      {JSON.stringify(users)}
     </div>
   );
 };
